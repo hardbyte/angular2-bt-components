@@ -4,7 +4,16 @@
   Gratz! <smile></smile>
 </h2>
 
-<p class="note">
-  Your deployment of Angular 2 Seed worked perfectly!
-  Click <em>about (above)</em> to get your reward!
-</p>
+<h1>First</h1>
+<markdown-editor [initial-text]="welcome"></markdown-editor>
+
+
+<hr>
+<h1>Second</h1>
+<markdown-editor [initial-text]="welcome" [editable]="false"></markdown-editor>
+
+
+<hr>
+<h1>Third</h1>
+<button (click)="md.editMode = true">Custom Edit Button</button>
+<markdown-editor [initial-text]="welcome" [show-edit-button]="false" edit-mode="true" #md></markdown-editor>

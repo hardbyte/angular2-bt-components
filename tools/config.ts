@@ -42,6 +42,10 @@ export const PATH = {
     all: APP_SRC,
     jslib_inject: [
       // Order is quite important here for the HTML tag injection.
+
+      // Libraries I've added
+      resolve('marked/marked.min.js'),
+
       resolve('es6-shim/es6-shim.min.js'),
       resolve('es6-shim/es6-shim.map'),
       resolve('reflect-metadata/Reflect.js'),
